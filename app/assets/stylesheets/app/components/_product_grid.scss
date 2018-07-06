@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #PRODUCT-GRID
+\*------------------------------------*/
+
+.product-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+    .product-grid__cell {
+        margin-bottom: $spacing-unit * 2;
+        width: 32%;
+    }

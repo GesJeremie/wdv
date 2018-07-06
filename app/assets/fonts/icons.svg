@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2018-7-2: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20180321 at Mon Jul  2 21:41:24 2018
+ By Jeremie
+
+</metadata>
+<defs>
+<font id="icons" horiz-adv-x="200" >
+  <font-face 
+    font-family="icons"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="64 47.709 446.963 337.208"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " 
+ />
+    <glyph glyph-name="cart" unicode="&#xf100;" horiz-adv-x="512" 
+d="M431.709 257.164v0c9.30957 0 16.291 -4.65527 15.127 -13.9639c0 -9.30957 -6.98145 -15.1279 -16.29 -15.1279v0l-23.2734 -152.436c-3.49023 -12.8008 -11.6357 -27.9277 -25.5996 -27.9277h-249.019c-13.9639 0 -25.5996 13.9639 -25.5996 27.9277l-24.4365 151.272
+h-2.32715c-9.30957 0 -16.291 5.81836 -16.291 15.127c0 9.30957 6.98145 15.1279 16.291 15.1279h68.6543l72.1455 74.4727c4.6543 6.98145 12.7998 6.98145 18.6182 2.32715l2.32715 -2.32715c4.6543 -4.65527 3.49121 -11.6367 -2.32715 -17.4551l-55.8545 -57.0176
+h146.618l-55.8545 57.0176c-5.81836 5.81836 -6.98145 12.7998 -2.32715 17.4551l2.32715 2.32715c4.6543 4.6543 12.7998 3.49023 18.6182 -2.32715l72.1455 -74.4727h66.3271z" />
+  </font>
+</defs></svg>

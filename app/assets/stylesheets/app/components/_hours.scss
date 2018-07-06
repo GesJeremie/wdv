@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #HOURS
+\*------------------------------------*/
+
+
+.hours {
+    position: relative;
+    height: 65px;
+}
+
+.hours--closed {
+    background: #ff6b81;
+}
+
+.hours--opened {
+    background: $green--light;
+}
+
+    .hours__content {
+        @include center();
+        font-size: $font-size + 4px;
+        font-weight: bold;
+        color: $white;
+    }

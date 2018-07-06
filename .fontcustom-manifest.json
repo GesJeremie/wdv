@@ -1,0 +1,51 @@
+{
+  "checksum": {
+    "previous": "37210370623acb7602cb72cdbd68efe6a259f5ca4a2d341c4cdf9411e6341b37",
+    "current": "37210370623acb7602cb72cdbd68efe6a259f5ca4a2d341c4cdf9411e6341b37"
+  },
+  "fonts": [
+    "app/assets/fonts//icons.ttf",
+    "app/assets/fonts//icons.svg",
+    "app/assets/fonts//icons.woff",
+    "app/assets/fonts//icons.eot",
+    "app/assets/fonts//icons.woff2"
+  ],
+  "glyphs": {
+    "cart": {
+      "codepoint": 61696,
+      "source": "app/assets/icons/cart.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "config/fontcustom.yml",
+    "copyright": "",
+    "css3": false,
+    "css_selector": ".icon--{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "icons",
+    "force": true,
+    "input": {
+      "templates": "app/assets/icons",
+      "vectors": "app/assets/icons"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "app/assets/stylesheets/vendor",
+      "fonts": "app/assets/fonts/",
+      "preview": "app/assets/fonts/"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "scss"
+    ]
+  },
+  "templates": [
+    "app/assets/stylesheets/vendor/_icons.scss"
+  ]
+}

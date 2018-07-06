@@ -1,0 +1,17 @@
+<%
+   %w(
+      lodash
+      stimulus
+      classtrophobic
+      jquery
+      tingle
+      app/boot
+      app/settings/config
+      app/initializers/default
+      app/helpers/is_batman
+      app/controllers/filters
+      app/controllers/productItem
+    ).each do |asset|
+      require_asset asset
+   end
+%>

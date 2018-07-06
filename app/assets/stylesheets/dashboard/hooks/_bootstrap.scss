@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #BOOTSTRAP-CUSTOM
+\*------------------------------------*/
+
+.btn-no-border-radius-left {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.btn-no-border-radius-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}

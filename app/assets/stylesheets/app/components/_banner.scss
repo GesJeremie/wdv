@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    #BANNER
+\*------------------------------------*/
+
+$banner-height: 420px !default;
+$banner-container-text-bg-color: #57606f !default;
+$banner-container-text-bg-color-alt: #a8e063 !default;
+
+.banner {
+    width: 100%;
+    height: $banner-height;
+}
+
+
+    .banner__container {
+        position: relative;
+        height: $banner-height;
+        float: left;
+    }
+
+    .banner__container--text {
+        width: 30%;
+        background: $banner-container-text-bg-color;
+        //background-image: linear-gradient(108deg, $banner-container-text-bg-color-alt, $banner-container-text-bg-color 90%);
+    }
+
+    .banner__container--cover {
+        width: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+        .banner__title {
+            margin-bottom: $spacing-unit * 3;
+            font-size: $font-size + 15px;
+            font-weight: $font-weight-bold;
+            letter-spacing: -1px;
+        }
+
+
+        .banner__content {
+            @include center();
+            width: 90%;
+            color: $white;
+            font-size: $font-size + 3px;
+            font-weight: $font-weight-light;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+            .banner__delimiter {
+                display: block;
+                margin: 16px auto;
+                width: 30px;
+                height: 1px;
+                background: $white;
+                content: '';
+            }
+
+            .banner__description {}
+
+            .banner__hours {
+                strong {
+                    font-weight: bold;
+                }
+            }
+
+            .banner__action {
+                margin-top: $spacing-unit * 3;
+            }

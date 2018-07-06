@@ -1,0 +1,51 @@
+# https://github.com/FontCustom/fontcustom
+
+font_name: icons
+css_selector: .icon-{{glyph}}
+preprocessor_path: ""
+autowidth: false
+no_hash: true
+force: false
+debug: false
+quiet: false
+
+input:
+  vectors: app/assets/icons
+
+output:
+  fonts: app/assets/fonts
+  css: app/assets/stylesheets
+
+templates:
+ - scss
+
+# --------------------------------------------------------------------------- #
+# Project Info
+#   Defaults shown. Learn more about these options by running
+#   `fontcustom help` or visiting <http://fontcustom.com>.
+# --------------------------------------------------------------------------- #
+
+font_name: icons
+css_selector: .icon--{{glyph}}
+preprocessor_path: ""
+autowidth: false
+no_hash: true
+force: true  # always update icon set
+debug: false
+quiet: false
+
+# --------------------------------------------------------------------------- #
+# Input Paths
+# --------------------------------------------------------------------------- #
+
+input:
+  vectors: app/assets/icons # required
+
+# --------------------------------------------------------------------------- #
+# Output Paths
+# --------------------------------------------------------------------------- #
+
+output:
+  fonts: app/assets/fonts/
+  css: app/assets/stylesheets/vendor
+

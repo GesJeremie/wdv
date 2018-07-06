@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #PRODUCT
+\*------------------------------------*/
+
+.product {
+    padding: $spacing-unit * 2;
+    border: 1px solid $gray--border;
+    border-radius: 7px;
+
+    &:hover {
+        background: $gray--light;
+        cursor: pointer;
+    }
+}
+
+    .product__icon {
+        display: inline-block;
+        width: 60px;
+        vertical-align: middle;
+
+        img {
+            margin: 0 auto;
+            max-width: 45px;
+        }
+    }
+
+    .product__icon--pre-rolls {}
+    .product__icon--flowers {}
+    .product__icon--first-aid {}
+
+    .product__details {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+        .product__name {
+            padding-bottom: $spacing-unit / 1.5;
+            font-size: $font-size + 3px;
+            font-weight: 700;
+        }
+
+    .product__price {
+        display: inline-block;
+        margin-top: $spacing-unit;
+        margin-right: $spacing-unit;
+        width: 30px;
+        float: right;
+        font-size: $font-size + 11px;
+        font-weight: 300;
+        vertical-align: middle;
+    }

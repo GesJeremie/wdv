@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    #TITLE
+\*------------------------------------*/
+
+.title {}
+
+.title--section {
+    margin: ($spacing-unit * 3) 0;
+    font-size: $font-size + 12px;
+    font-weight: 700;
+}

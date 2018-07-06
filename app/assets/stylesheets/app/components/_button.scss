@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+$button-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0 , 0.08) !default;
+
+.button {
+    display: inline-block;
+    padding: 0 14px;
+    height: 40px;
+    color: lighten($gray, 5%);
+    line-height: 40px;
+    box-shadow: $button-box-shadow;
+    white-space: nowrap;
+    background: $white;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+
+    &:hover {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    }
+}
+
+.button--success {
+    color: #fff;
+    background: #6772e5;
+    text-shadow: 0 1px 3px rgba(36,180,126,.4);
+
+    &:hover {
+        color: #fff;
+    }
+}
