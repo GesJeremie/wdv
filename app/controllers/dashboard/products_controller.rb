@@ -45,6 +45,6 @@ class Dashboard::ProductsController < Dashboard::BaseController
     end
 
     def product_params
-      params.require(:product).permit(:title, :description, :short_description, :unit_price, :in_stock, :gif, :icon, :category_id, :metadata, :active)
+      params.require(:product).permit(:title, :description, :short_description, :unit_price, :icon, :metadata, :active)
     end
 end

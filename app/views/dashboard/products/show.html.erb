@@ -22,16 +22,6 @@
       </p>
 
       <p>
-        <strong>In stock:</strong>
-        <%= @product.in_stock %>
-      </p>
-
-      <p>
-        <strong>Category:</strong>
-        <%= @product.category.title %>
-      </p>
-
-      <p>
         <strong>Metadata:</strong>
         <%= @product.metadata %>
       </p>
@@ -40,17 +30,6 @@
         <strong>Icon:</strong>
         <br/>
         <img width=50" src="<%= asset_path("icons/#{@product.icon}") %>" />
-      </p>
-
-      <p>
-        <strong>Gif:</strong>
-        <br/>
-
-        <% if @product.gif? %>
-            <img src="<%= asset_path("gifs/#{@product.gif}") %>" />
-        <% else %>
-          No gif
-        <% end %>
       </p>
 
       <p>

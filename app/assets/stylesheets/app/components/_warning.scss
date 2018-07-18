@@ -1,29 +1,60 @@
 .warning {
-    width: 70%;
     margin: 0 auto;
-    background: $gray--light;
-    padding: ($spacing-unit * 2) ($spacing-unit * 3);
+    margin-top: $spacing-unit * 5;
+    width: 100%;
     border-radius: 5px;
     line-height: 30px;
-    border: 2px dashed darken($gray--light, 5%);
+    border: 1px solid darken($gray--light, 10%);
+    margin-bottom: $spacing-unit * 15;
+
+    @include respond-to('medium') {
+        width: 100%;
+        margin-bottom: 0;
+        height: 170px;
+    }
+
+    @include respond-to('wide') {
+        width: 70%;
+    }
 }
 
-    .warning__gif img {
-        border-radius: 5px;
+    .warning__gif {
+        width: 100%;
+        height: 100%;
+
+        @include respond-to('medium') {
+            width: 30%;
+            float: left;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+
+            @include respond-to('medium') {
+                width: auto;
+                max-width: 100%;
+                border-radius: 0;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
     }
 
     .warning__list {
-        padding-top: $spacing-unit * 2.5;
-        padding-left: $spacing-unit * 3;
+        display: block;
+        width: 100%;
         list-style: disc;
+        padding: $spacing-unit ($spacing-unit * 4);
+
+        @include respond-to('medium') {
+            padding: 0;
+            padding-top: $spacing-unit * 2.5;
+            padding-left: $spacing-unit * 3;
+            width: 70%;
+            float: right;
+        }
     }
-
-.clearfix {
-    overflow: auto;
-}
-
-.clearfix:after {
-    content: "";
-    clear: both;
-    display: table;
-}

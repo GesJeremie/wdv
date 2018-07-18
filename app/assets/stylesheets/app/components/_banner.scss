@@ -17,23 +17,42 @@ $banner-container-text-bg-color:        $gray !default;
     }
 
     .banner__container--text {
+        position: relative;
         width: 100%;
         background: $banner-container-text-bg-color;
+        background-position: center center;
+        background-repeat: no-repeat;
 
-        @include respond-to('medium') {
-            width: 30%;
+        @include respond-to('wide') {
+            background-image: none !important;
+            width: 40%;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $black;
+            opacity: 0.6;
+
+            @include respond-to('wide') {
+                content: none;
+            }
         }
     }
 
     .banner__container--cover {
         display: none;
-        width: 70%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
 
-        @include respond-to('medium') {
+        @include respond-to('wide') {
             display: block;
+            width: 60%;
         }
     }
 
@@ -53,6 +72,7 @@ $banner-container-text-bg-color:        $gray !default;
             line-height: 25px;
             letter-spacing: 1px;
             text-align: center;
+            z-index: 4;
         }
 
             .banner__delimiter {

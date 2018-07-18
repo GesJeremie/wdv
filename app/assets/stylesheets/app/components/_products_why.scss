@@ -1,18 +1,30 @@
+/*------------------------------------*\
+    #PRODUCTS-WHY
+\*------------------------------------*/
+
 .products-why {
     display: flex;
-    flex-flow: row wrap;
     margin-top: $spacing-unit * 6;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
     .products-why__content {
-        width: 23%;
+        width: 100%;
+        margin-bottom: $spacing-unit * 3;
+        padding: ($spacing-unit * 3) 0;
+        color: $black;
+        text-align: center;
         background-color: $gray--light;
         border: 1px solid darken($gray--light, 4%);
-        color: $black;
-        padding: ($spacing-unit * 3) 0;
-        text-align: center;
-        margin-bottom: $spacing-unit * 3;
+
+        @include respond-to('medium') {
+            width: 48%;
+        }
+
+        @include respond-to('wide') {
+            width: 23%;
+        }
     }
 
         .products-why__icon {
@@ -21,7 +33,7 @@
             font-size: $font-size + 40px;
 
             .icon {
-                @include center();
+                @include center;
             }
 
             .icon--boy-broad-smile {
@@ -29,5 +41,4 @@
             }
         }
 
-        .products-why__label {
-        }
+        .products-why__label {}

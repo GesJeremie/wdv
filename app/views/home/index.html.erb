@@ -1,7 +1,7 @@
 <div class="grid grid--center">
   <div class="grid__cell grid__cell--80-at-medium">
     <div class="banner">
-      <div class="banner__container banner__container--text">
+      <div class="banner__container banner__container--text" style="background-image: url(<%= asset_path('home-cover.jpeg') %>)">
         <div class="banner__content">
           <div class="banner__title">Need Weed?</div>
           <div class="banner__description">
@@ -82,25 +82,15 @@
         Yes, we only have <%= @products.count %> products, that's it, forget the bullshit.
       </div>
 
-      <br/><br/>
-      <br/><br/>
-      <br/><br/>
-
       <div class="warning clearfix">
-        <div class="grid">
-          <div class="grid__cell grid__cell--30">
-            <div class="warning__gif">
-              <img src="<%= asset_path('gifs/smoking.gif') %>" />
-            </div>
-          </div>
-          <div class="grid__cell grid__cell--70">
-            <ul class="warning__list">
-              <li>We ask for an ID (19+) upon delivery!</li>
-              <li>We currently accept only cash</li>
-              <li>Our drivers don't carry a lot of cash for security reasons, make sure you have the change</li>
-            </ul>
-          </div>
+        <div class="warning__gif">
+          <img src="<%= asset_path('gifs/smoking.gif') %>" />
         </div>
+        <ul class="warning__list">
+          <li>We ask for an ID (19+) upon delivery!</li>
+          <li>We currently accept only cash</li>
+          <li>Our drivers don't carry a lot of cash for security reasons, make sure you have the change</li>
+        </ul>
       </div>
 
       <br/><br/>

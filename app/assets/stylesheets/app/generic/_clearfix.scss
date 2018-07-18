@@ -1,0 +1,11 @@
+.clearfix {
+    @include respond-to('medium') {
+        overflow: auto;
+    }
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: '';
+}

@@ -24,14 +24,17 @@
               Store
             </a>
             <div class="dropdown-menu" aria-labelledby="store">
-              <a class="dropdown-item" href="#">Open / Close</a>
-              <%= link_to 'Categories', dashboard_categories_path, class: 'dropdown-item' %>
+              <%= link_to 'Open/Close', root_path, class: 'dropdown-item' %>
               <%= link_to 'Products', dashboard_products_path, class: 'dropdown-item' %>
             </div>
           </li>
         </ul>
         <div class="my-2 my-lg-0">
-          The shop is currently closed
+          <% if store_open? %>
+            The shop is currently opened
+          <% else %>
+            The shop is currently closed
+          <% end %>
         </div>
       </div>
     </nav>

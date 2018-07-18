@@ -35,26 +35,9 @@
           </div>
         </div>
 
-        <div class="form-group row">
-          <div class="col-2">
-            <%= form.label :in_stock %>
-            <%= form.number_field :in_stock, class: 'form-control' %>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <%= form.label :category_id %>
-          <%= form.collection_select :category_id, Category.all, :id, :title, {}, { class: 'form-control' } %>
-        </div>
-
         <div class="form-group">
           <%= form.label :icon %>
-          <%= form.select :icon, list_icons, {}, { class: 'form-control' }%>
-        </div>
-
-        <div class="form-group">
-          <%= form.label :gif %>
-          <%= form.select :gif, list_gifs, {}, { class: 'form-control' }%>
+          <%= form.select :icon, list_icons, { selected: product.icon }, { class: 'form-control' }%>
         </div>
 
         <div class="form-group">

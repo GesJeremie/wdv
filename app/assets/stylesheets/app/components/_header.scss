@@ -8,10 +8,6 @@
     margin: $spacing-unit * 1.5;
 }
 
-    .header__links {
-        text-align: left;
-    }
-
     .header__logo {
         display: block;
         position: relative;
@@ -28,48 +24,3 @@
             font-family: $font-primary;
             font-weight: $font-weight-bold;
         }
-
-    .header__phone {
-        margin-top: $spacing-unit * 1.5;
-    }
-
-        .header__phone-icon {
-            display: inline-block;
-            margin-right: $spacing-unit;
-            vertical-align: middle;
-
-            .icon {
-                font-size: 50px;
-            }
-        }
-
-        .header__phone-text {
-            vertical-align: middle;
-            display: inline-block;
-
-            span {
-                display: block;
-                margin-top: $spacing-unit / 2;
-                font-weight: $font-weight-bold;
-                font-size: $font-size + 4px;
-            }
-        }
-
-    .header__cart {
-        display: block;
-        margin-top: $spacing-unit * 1.5;
-        font-size: $font-size + 30px;
-        text-align: right;
-        color: $black;
-        text-decoration: none;
-    }
-
-        .header__cart-container {}
-
-            .header__cart-count {
-                display: inline-block;
-            }
-
-            .header__cart-icon {
-                display: inline-block;
-            }

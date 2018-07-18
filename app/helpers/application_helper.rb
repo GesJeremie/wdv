@@ -26,10 +26,6 @@ module ApplicationHelper
     end
   end
 
-  def list_gifs
-    list_filenames('app/assets/images/gifs/*')
-  end
-
   def list_icons
     list_filenames('app/assets/images/icons/*')
   end

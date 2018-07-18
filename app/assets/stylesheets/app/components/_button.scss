@@ -31,30 +31,15 @@ $button-border-radius:      4px !default;
         transform: translateY(-1px);
     }
 
-    .product-summary__form & {
-        display: block;
-        margin: 0 auto;
-        width: 90%;
+    .call-us__actions & {
+        margin-top: $spacing-unit;
+        width: 45%;
+        float: left;
         color: $white;
-        text-align: center;
-        background-color: $pink;
+        background-color: $green;
     }
+}
 
-    .product-summary__form-quantity & {
-        display: inline-block;
-        padding: 0 ($spacing-unit * 1.5);
-        width: auto;
-        height: auto;
-        color: $black;
-        font-size: $font-size + 4px;
-        font-weight: $font-weight-bold;
-        line-height: 32px;
-        background: $gray--light;
-        border: 1px solid $gray--light;
-        box-shadow: none;
-
-        &:hover {
-            transform: none;
-        }
-    }
+.button + .button {
+    margin-left: 5%;
 }

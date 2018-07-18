@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 .product-grid {
-    margin-top: $spacing-unit * 4;
     display: flex;
+    margin-top: $spacing-unit * 4;
     flex-flow: row wrap;
     justify-content: space-between;
 }

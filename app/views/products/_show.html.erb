@@ -2,28 +2,20 @@
   <div class="product-summary__details">
     <div class="product-summary__title"><%= @product.title %></div>
     <div class="product-summary__short-description"><%= @product.short_description %></div>
+
+    <% if @product.dosage? %>
+      <div class="product-summary__dosage"><%= @product.dosage %></div>
+    <% end %>
+
     <div class="product-summary__description"><%= simple_format(@product.description) %></div>
 
     <% if @product.effects? %>
-
       <div class="product-summary__effects">
         Effects
       </div>
 
       <%= render partial: 'products/effects', collection: @product.effects, as: :effect %>
     <% end %>
+
   </div>
-
-  <div
-    class="product-summary__form"
-  >
-
-      <% if @product.gif? %>
-        <div class="product-summary__gif">
-          <img src="<%= asset_path("gifs/#{@product.gif}") %>" />
-        </div>
-      <% end %>
-
-    <div class="product-summary__dosage-info">Enough for about 2 joints or 3 bowls.</div>
-
 </div>

@@ -12,16 +12,11 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  get 'order', to: 'orders#show'
-
   scope format: true, constraints: JsonConstraint.new do
     resources :products, only: [:show]
-    resources :cart_products, only: [:create, :update, :destroy]
-    resource :cart, only: [:show, :destroy]
   end
 
   namespace :dashboard do
-    resources :categories
     resources :products
   end
 end
