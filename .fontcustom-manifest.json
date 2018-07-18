@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "37210370623acb7602cb72cdbd68efe6a259f5ca4a2d341c4cdf9411e6341b37",
-    "current": "37210370623acb7602cb72cdbd68efe6a259f5ca4a2d341c4cdf9411e6341b37"
+    "previous": "49102b8a00f11ca5b6eb5a8329280c9a52a519f3ef9a4c8fa4a2bbe57820d4fd",
+    "current": "49102b8a00f11ca5b6eb5a8329280c9a52a519f3ef9a4c8fa4a2bbe57820d4fd"
   },
   "fonts": [
     "app/assets/fonts//icons.ttf",
@@ -11,9 +11,37 @@
     "app/assets/fonts//icons.woff2"
   ],
   "glyphs": {
+    "bicycle": {
+      "codepoint": 61698,
+      "source": "app/assets/icons/bicycle.svg"
+    },
+    "boy-broad-smile": {
+      "codepoint": 61700,
+      "source": "app/assets/icons/boy-broad-smile.svg"
+    },
     "cart": {
       "codepoint": 61696,
       "source": "app/assets/icons/cart.svg"
+    },
+    "circle": {
+      "codepoint": 61697,
+      "source": "app/assets/icons/circle.svg"
+    },
+    "diamond": {
+      "codepoint": 61699,
+      "source": "app/assets/icons/diamond.svg"
+    },
+    "hand-shake": {
+      "codepoint": 61701,
+      "source": "app/assets/icons/hand-shake.svg"
+    },
+    "ingot": {
+      "codepoint": 61702,
+      "source": "app/assets/icons/ingot.svg"
+    },
+    "phone": {
+      "codepoint": 61703,
+      "source": "app/assets/icons/phone.svg"
     }
   },
   "options": {

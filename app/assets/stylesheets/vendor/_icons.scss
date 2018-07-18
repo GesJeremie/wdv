@@ -24,7 +24,14 @@
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
-.icon--cart:before {
+.icon--bicycle:before,
+.icon--boy-broad-smile:before,
+.icon--cart:before,
+.icon--circle:before,
+.icon--diamond:before,
+.icon--hand-shake:before,
+.icon--ingot:before,
+.icon--phone:before {
   display: inline-block;
   font-family: "icons";
   font-style: normal;
@@ -39,6 +46,20 @@
   font-smoothing: antialiased;
 }
 
+.icon--bicycle:before { content: "\f102"; }
+.icon--boy-broad-smile:before { content: "\f104"; }
 .icon--cart:before { content: "\f100"; }
+.icon--circle:before { content: "\f101"; }
+.icon--diamond:before { content: "\f103"; }
+.icon--hand-shake:before { content: "\f105"; }
+.icon--ingot:before { content: "\f106"; }
+.icon--phone:before { content: "\f107"; }
 
+$font-icons-bicycle: "\f102";
+$font-icons-boy-broad-smile: "\f104";
 $font-icons-cart: "\f100";
+$font-icons-circle: "\f101";
+$font-icons-diamond: "\f103";
+$font-icons-hand-shake: "\f105";
+$font-icons-ingot: "\f106";
+$font-icons-phone: "\f107";

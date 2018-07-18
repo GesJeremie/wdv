@@ -1,0 +1,33 @@
+.products-why {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: $spacing-unit * 6;
+    justify-content: space-between;
+}
+
+    .products-why__content {
+        width: 23%;
+        background-color: $gray--light;
+        border: 1px solid darken($gray--light, 4%);
+        color: $black;
+        padding: ($spacing-unit * 3) 0;
+        text-align: center;
+        margin-bottom: $spacing-unit * 3;
+    }
+
+        .products-why__icon {
+            position: relative;
+            height: 65px;
+            font-size: $font-size + 40px;
+
+            .icon {
+                @include center();
+            }
+
+            .icon--boy-broad-smile {
+                font-size: $font-size + 31px;
+            }
+        }
+
+        .products-why__label {
+        }

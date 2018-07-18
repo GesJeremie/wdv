@@ -1,0 +1,11 @@
+.number {
+    padding: $spacing-unit * 3;
+    background-color: $gray--light;
+    text-align: center;
+    border-bottom: darken($gray--light, 5%);
+    letter-spacing: 1px;
+
+    strong {
+        font-weight: $font-weight-bold;
+    }
+}

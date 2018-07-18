@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <p>
+        <strong>Title:</strong>
+        <%= @product.title %>
+      </p>
+
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
+
+      <p>
+        <strong>Short description:</strong>
+        <%= @product.short_description %>
+      </p>
+
+      <p>
+        <strong>Unit price:</strong>
+        <%= @product.unit_price %>
+      </p>
+
+      <p>
+        <strong>In stock:</strong>
+        <%= @product.in_stock %>
+      </p>
+
+      <p>
+        <strong>Category:</strong>
+        <%= @product.category.title %>
+      </p>
+
+      <p>
+        <strong>Metadata:</strong>
+        <%= @product.metadata %>
+      </p>
+
+      <p>
+        <strong>Icon:</strong>
+        <br/>
+        <img width=50" src="<%= asset_path("icons/#{@product.icon}") %>" />
+      </p>
+
+      <p>
+        <strong>Gif:</strong>
+        <br/>
+
+        <% if @product.gif? %>
+            <img src="<%= asset_path("gifs/#{@product.gif}") %>" />
+        <% else %>
+          No gif
+        <% end %>
+      </p>
+
+      <p>
+        <strong>Active:</strong>
+        <%= @product.active %>
+      </p>
+    </div>
+  </div>
+
+  <%= link_to 'Edit', edit_dashboard_product_path(@product) %> |
+  <%= link_to 'Back', dashboard_products_path %>
+</div>

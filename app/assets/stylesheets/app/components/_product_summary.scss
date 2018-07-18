@@ -1,0 +1,124 @@
+/*------------------------------------*\
+    #PRODUCT-SUMMARY
+\*------------------------------------*/
+
+.product-summary {
+
+}
+
+    .product-summary__details {
+        padding: $spacing-unit * 3;
+        width: 70%;
+        float: left;
+        color: $white;
+        background-color: $green;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+
+        .product-summary__title {
+            margin-bottom: $spacing-unit;
+            font-size: $font-size + 6px;
+            font-weight: $font-weight-bold;
+        }
+
+        .product-summary__short-description {
+            margin-bottom: $spacing-unit * 3;
+            font-weight: $font-weight-bold;
+        }
+
+        .product-summary__effects {
+            margin-top: $spacing-unit * 2;
+            margin-bottom: $spacing-unit;
+            font-size: $font-size + 3px;
+            font-weight: $font-weight-bold;
+        }
+
+        .product-summary__description {
+            font-weight: $font-weight-light;
+            line-height: 30px;
+
+            p {
+                margin-bottom: $spacing-unit * 2;
+            }
+        }
+
+        .product-summary__sourced {
+            margin-top: $spacing-unit * 2;
+            font-size: $font-size - 2px;
+        }
+
+            .product-summary__sourced-link {
+                color: $white;
+            }
+
+    .product-summary__form {
+        margin-top: $spacing-unit * 3;
+        width: 30%;
+        float: left;
+    }
+
+        .product-summary__form-quantity {
+            margin-bottom: $spacing-unit * 2;
+            text-align: center;
+        }
+
+            .product-summary__form-quantity-price-total {
+                font-size: $font-size + 6px;
+                font-weight: $font-weight-bold;
+            }
+
+            .product-summary__form-quantity-minus {
+                display: inline-block;
+                margin-right: $spacing-unit;
+                user-select: none;
+            }
+
+            .product-summary__form-quantity-plus {
+                display: inline-block;
+                margin-left: $spacing-unit;
+                user-select: none;
+            }
+
+            .product-summary__form-quantity-count {
+                display: inline-block;
+                font-weight: $font-weight-bold;
+            }
+
+        .product-summary__gif {
+            margin-bottom: $spacing-unit * 2;
+            text-align: center;
+        }
+
+        .product-summary__dosage-info {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: $spacing-unit;
+            width: 90%;
+            color: $gray;
+            font-size: $font-size;
+            line-height: $spacing-unit * 2;
+            text-align: center;
+        }
+
+        .product-summary__added-to-cart {
+            margin: ($spacing-unit * 2) auto;
+            width: 80%;
+            font-size: $font-size;
+            font-weight: $font-weight-light;
+            line-height: 20px;
+            text-align: center;
+
+            a {
+                color: $blue;
+            }
+
+            strong {
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        .product-summary__fuck-yeah {
+            width: 100%;
+        }

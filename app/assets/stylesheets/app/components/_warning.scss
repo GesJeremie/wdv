@@ -1,0 +1,29 @@
+.warning {
+    width: 70%;
+    margin: 0 auto;
+    background: $gray--light;
+    padding: ($spacing-unit * 2) ($spacing-unit * 3);
+    border-radius: 5px;
+    line-height: 30px;
+    border: 2px dashed darken($gray--light, 5%);
+}
+
+    .warning__gif img {
+        border-radius: 5px;
+    }
+
+    .warning__list {
+        padding-top: $spacing-unit * 2.5;
+        padding-left: $spacing-unit * 3;
+        list-style: disc;
+    }
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}

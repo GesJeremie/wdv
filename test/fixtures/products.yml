@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  short_description: MyString
+  unit_price: 1.5
+  in_stock: 1
+  category: one
+  metadata: 
+  active: false
+
+two:
+  title: MyString
+  description: MyString
+  short_description: MyString
+  unit_price: 1.5
+  in_stock: 1
+  category: two
+  metadata: 
+  active: false

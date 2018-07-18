@@ -6,7 +6,7 @@ run.config:
     - nodejs
     - nginx
     - ImageMagick
-
+    - fontforge
 
   build_triggers:
     - Gemfile

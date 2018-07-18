@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #PROGRESS-BAR
+\*------------------------------------*/
+
+$progress-bar-border-radius: 20px !default;
+
+.progress-bar {
+    position: relative;
+    margin-bottom: $spacing-unit * 1.5;
+    width: 80%;
+    height: 35px;
+    background-color: $transparent;
+    border-radius: $progress-bar-border-radius;
+}
+
+    .progress-bar__fill {
+        width: 0%;
+        height: 100%;
+        background-color: $white;
+        border-top-right-radius: $progress-bar-border-radius;
+        border-bottom-right-radius: $progress-bar-border-radius;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .progress-bar__label {
+        @include center('vertical');
+        left: $spacing-unit * 2;
+        color: $green;
+        font-size: $font-size;
+        font-weight: $font-weight-bold;
+    }

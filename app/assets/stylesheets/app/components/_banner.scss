@@ -2,15 +2,13 @@
     #BANNER
 \*------------------------------------*/
 
-$banner-height: 420px !default;
-$banner-container-text-bg-color: #57606f !default;
-$banner-container-text-bg-color-alt: #a8e063 !default;
+$banner-height:                         420px !default;
+$banner-container-text-bg-color:        $gray !default;
 
 .banner {
     width: 100%;
     height: $banner-height;
 }
-
 
     .banner__container {
         position: relative;
@@ -19,16 +17,24 @@ $banner-container-text-bg-color-alt: #a8e063 !default;
     }
 
     .banner__container--text {
-        width: 30%;
+        width: 100%;
         background: $banner-container-text-bg-color;
-        //background-image: linear-gradient(108deg, $banner-container-text-bg-color-alt, $banner-container-text-bg-color 90%);
+
+        @include respond-to('medium') {
+            width: 30%;
+        }
     }
 
     .banner__container--cover {
+        display: none;
         width: 70%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+
+        @include respond-to('medium') {
+            display: block;
+        }
     }
 
         .banner__title {
@@ -37,7 +43,6 @@ $banner-container-text-bg-color-alt: #a8e063 !default;
             font-weight: $font-weight-bold;
             letter-spacing: -1px;
         }
-
 
         .banner__content {
             @include center();

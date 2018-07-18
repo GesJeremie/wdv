@@ -1,0 +1,42 @@
+<% if @cart.count_quantities == 0 %>
+  Nothing in your cart dude.
+<% end %>
+
+<div class="cart-summary">
+  <div class="cart-summary__heading">
+    Shopping Bag
+  </div>
+
+  <div class="cart-summary__items">
+    <% @cart.cart_products.each do |cart_product| %>
+      <div
+        class="cart-summary__item"
+        data-controller="cartProduct"
+        data-cartProduct-id="<%= cart_product.id %>"
+        data-cartProduct-quantity="<%= cart_product.quantity %>"
+      >
+        <div class="grid">
+          <div class="grid__cell grid__cell--25">
+            <div class="cart-summary__item-title"><%= cart_product.product.title %></div>
+            <div class="cart-summary__item-short-description"><%= cart_product.product.short_description %></div>
+          </div>
+          <div class="grid__cell grid__cell--25">
+            <button data-action="click->cartProduct#onClickLessQuantity">-</button> <span data-target="cartProduct.quantity"><%= cart_product.quantity %></span> <button data-action="click->cartProduct#onClickMoreQuantity">+</button>
+          </div>
+          <div class="grid__cell grid__cell--25">
+            <span data-target="cartProduct.totalPrice"><%= cart_product.decorate.total_price_humanize %></span>
+          </div>
+          <div class="grid__cell grid__cell--25">
+            <a class="button" data-action="click->cartProduct#onClickRemove">Remove</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="cart-summary__footer">
+        <div class="cart-summary__footer-total" data-controller="cartTotalPrice">
+          Total Price: <span data-target="cartTotalPrice.totalPrice"><%= @cart.decorate.total_price_humanize %></span>
+        </div>
+  </div>
+</div>

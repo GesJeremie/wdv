@@ -11,3 +11,15 @@
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
+
+.dot {
+    font-size: 10px;
+}
+
+.dot--true {
+    color: green
+}
+
+.dot--false {
+    color: red;
+}

@@ -1,55 +1,15 @@
-<% if store_open? %>
-  <div class="hours hours--opened">
-    <div class="hours__content">We are open!</div>
-  </div>
-<% else %>
-  <div class="hours hours--closed">
-    <div class="hours__content">Sorry, we are closed!</div>
-  </div>
-<% end %>
-
-
 <div class="grid grid--center">
-  <div class="grid__cell grid__cell--80">
-    <div class="header">
-      <div class="grid grid--center">
-        <div class="grid__cell grid__cell--33">
-          <div class="header__links">
-          </div>
-        </div>
-
-        <div class="grid__cell grid__cell--33">
-          <div class="header__logo">
-            <div class="header__logo-text">WDV</div>
-          </div>
-        </div>
-
-        <div class="grid__cell grid__cell--33">
-          <div class="header__cart">
-            <span class="icon icon--cart"></span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid grid--center">
-  <div class="grid__cell grid__cell--80">
+  <div class="grid__cell grid__cell--80-at-medium">
     <div class="banner">
       <div class="banner__container banner__container--text">
         <div class="banner__content">
           <div class="banner__title">Need Weed?</div>
           <div class="banner__description">
-            We deliver great buds to your door in <strong>less than an hour</strong> in downtown Vancouver, Canada.
+            We deliver great buds to your door in <strong>less than an hour</strong> in <strong>downtown</strong> Vancouver, Canada.
           </div>
           <div class="banner__delimiter"></div>
           <div class="banner__hours">
             We are open <strong>Friday</strong> and <strong>Saturday</strong> from <strong>8pm to 4:20am</strong>
-          </div>
-          <div class="banner__action">
-            <a class="button">Area of delivery</a>
           </div>
         </div>
       </div>
@@ -59,212 +19,94 @@
   </div>
 </div>
 
+
+
 <div class="section">
   <div class="grid grid--center">
     <div class="grid__cell grid__cell--80">
-      <h2 class="title title--section">Flowers</h2>
+
+      <div class="products-why">
+            <div class="products-why__content">
+              <div class="products-why__icon">
+                <i class="icon icon--ingot"></i>
+              </div>
+              <div class="products-why__label">Great Quality</div>
+            </div>
+            <div class="products-why__content">
+              <div class="products-why__icon">
+                <i class="icon icon--bicycle"></i>
+              </div>
+              <div class="products-why__label">Free Delivery</div>
+            </div>
+            <div class="products-why__content">
+              <div class="products-why__icon">
+                <i class="icon icon--boy-broad-smile"></i>
+              </div>
+              <div class="products-why__label">No minimum required</div>
+            </div>
+            <div class="products-why__content">
+              <div class="products-why__icon">
+                <i class="icon icon--hand-shake"></i>
+              </div>
+              <div class="products-why__label">You don't have to tip our drivers</div>
+            </div>
+      </div>
 
       <div class="product-grid">
 
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('flowers.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Green Crack - 1gram
+        <% @products.each do |product| %>
+          <div class="product-grid__cell" data-controller="productItem" data-productItem-product-id="<%= product.id %>">
+            <div class="product" data-action="click->productItem#onClickProduct">
+              <div class="product__icon">
+                <img src="<%= asset_path("icons/#{product.icon}") %>" />
               </div>
-              <div class="product__type product__type--sativa">
-                Indica
-              </div>
-            </div>
 
-            <div class="product__price">
-              $12
+              <div class="product__details">
+                <div class="product__name">
+                  <%= product.title %>
+                </div>
+                <div class="product__type product__type--sativa">
+                  <%= product.short_description %>
+                </div>
+              </div>
+
+              <div class="product__price">
+                <%= product.unit_price_humanize %>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="product-grid__cell">
-          <div class="product" data-controller="productItem" data-action="click->productItem#onClickProduct">
-            <div class="product__icon">
-              <img src="<%= asset_path('flowers.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Lemon Haze - 1gram
-              </div>
-              <div class="product__type product__type--sativa">
-                Sativa
-              </div>
-            </div>
-
-            <div class="product__price">
-              $12
-            </div>
-          </div>
-        </div>
-
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('flowers.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Purple Gold - 1gram
-              </div>
-              <div class="product__type product__type--sativa">
-                Indica
-              </div>
-            </div>
-
-            <div class="product__price">
-              $15
-            </div>
-          </div>
-        </div>
-
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('flowers.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Sour Tangle - 6gram
-              </div>
-              <div class="product__type product__type--sativa">
-                Indica
-              </div>
-            </div>
-
-            <div class="product__price">
-              $60
-            </div>
-          </div>
-        </div>
-
+        <% end %>
       </div>
 
-
-      <h2 class="title title--section">Pre-rolls</h2>
-
-      <div class="product-grid">
-
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('pre-rolls.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Silver Haze - 0.5gram
-              </div>
-              <div class="product__type product__type--sativa">
-                Hybrid
-              </div>
-            </div>
-
-            <div class="product__price">
-              $6
-            </div>
-          </div>
-        </div>
-
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('pre-rolls.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Shake - 0.5gram
-              </div>
-              <div class="product__type product__type--sativa">
-                Mixed
-              </div>
-            </div>
-
-            <div class="product__price">
-              $2
-            </div>
-          </div>
-        </div>
-
-        <div class="product-grid__cell">
-        </div>
-
-
+      <div class="products-shop__no-bullshit">
+        Yes, we only have <%= @products.count %> products, that's it, forget the bullshit.
       </div>
 
+      <br/><br/>
+      <br/><br/>
+      <br/><br/>
 
-      <h2 class="title title--section">First Aid</h2>
-
-      <div class="product-grid">
-
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('lighter.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Lighter Clipper
-              </div>
-              <div class="product__type product__type--sativa">
-                White
-              </div>
-            </div>
-
-            <div class="product__price">
-              $3
+      <div class="warning clearfix">
+        <div class="grid">
+          <div class="grid__cell grid__cell--30">
+            <div class="warning__gif">
+              <img src="<%= asset_path('gifs/smoking.gif') %>" />
             </div>
           </div>
-        </div>
-
-        <div class="product-grid__cell">
-          <div class="product">
-            <div class="product__icon">
-              <img src="<%= asset_path('rolling-papers.svg') %>" />
-            </div>
-
-            <div class="product__details">
-              <div class="product__name">
-                Rolling Papers OCB
-              </div>
-              <div class="product__type product__type--sativa">
-                Filters included
-              </div>
-            </div>
-
-            <div class="product__price">
-              $4
-            </div>
+          <div class="grid__cell grid__cell--70">
+            <ul class="warning__list">
+              <li>We ask for an ID (19+) upon delivery!</li>
+              <li>We currently accept only cash</li>
+              <li>Our drivers don't carry a lot of cash for security reasons, make sure you have the change</li>
+            </ul>
           </div>
         </div>
-
-        <div class="product-grid__cell">
-        </div>
-
-
       </div>
 
-      <br/><br/><br/><br/>
-
+      <br/><br/>
+      <br/><br/>
 
     </div>
   </div>
 </div>
 
-<div id="dialog" style="display: none">
-  This is a test
-</div>

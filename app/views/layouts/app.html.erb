@@ -9,6 +9,43 @@
   </head>
 
   <body>
+    <% if store_open? %>
+      <div class="hours hours--opened">
+        <div class="hours__content">We are open!</div>
+      </div>
+    <% else %>
+      <div class="hours hours--closed">
+        <div class="hours__content">Sorry, we are closed!</div>
+      </div>
+    <% end %>
+
+    <div class="number">
+      Place your order by SMS / Call <strong>+1 647-931-6480</strong>
+    </div>
+
+
+    <div class="grid grid--center">
+      <div class="grid__cell grid__cell--80">
+        <div class="header">
+          <div class="grid grid--center">
+            <div class="grid__cell grid__cell--33">
+
+            </div>
+
+            <div class="grid__cell grid__cell--33">
+              <a href="<%= root_path %>" class="header__logo">
+                <div class="header__logo-text">WDV</div>
+              </a>
+            </div>
+
+            <div class="grid__cell grid__cell--33">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 
