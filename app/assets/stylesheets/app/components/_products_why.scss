@@ -12,7 +12,7 @@
     .products-why__content {
         width: 100%;
         margin-bottom: $spacing-unit * 3;
-        padding: ($spacing-unit * 3) 0;
+        padding: ($spacing-unit * 3) $spacing-unit;
         color: $black;
         text-align: center;
         background-color: $gray--light;

@@ -7,6 +7,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.float :unit_price
       t.string :icon
       t.jsonb :metadata
+      t.boolean :in_stock
       t.boolean :active
 
       t.timestamps

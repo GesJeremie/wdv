@@ -20,7 +20,6 @@
 </div>
 
 
-
 <div class="section">
   <div class="grid grid--center">
     <div class="grid__cell grid__cell--80">
@@ -68,6 +67,16 @@
                 <div class="product__type product__type--sativa">
                   <%= product.short_description %>
                 </div>
+
+                <% if product.in_stock? %>
+                  <div class="product__in-stock product__in-stock--yes">
+                    In Stock
+                  </div>
+                <% else %>
+                  <div class="product__in-stock product__in-stock--no">
+                    Victim of its own success
+                  </div>
+                <% end %>
               </div>
 
               <div class="product__price">

@@ -18,7 +18,7 @@ $hours-height: 65px !default;
 }
 
     .hours__content {
-        @include center();
+        @include center;
         color: $white;
         font-size: $font-size + 4px;
         font-weight: bold;

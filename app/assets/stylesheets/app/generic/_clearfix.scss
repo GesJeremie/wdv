@@ -1,8 +1,4 @@
-.clearfix {
-    @include respond-to('medium') {
-        overflow: auto;
-    }
-}
+.clearfix {}
 
 .clearfix:after {
     display: table;

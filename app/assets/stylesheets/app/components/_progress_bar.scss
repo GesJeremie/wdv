@@ -7,10 +7,14 @@ $progress-bar-border-radius: 20px !default;
 .progress-bar {
     position: relative;
     margin-bottom: $spacing-unit * 1.5;
-    width: 80%;
+    width: 100%;
     height: 35px;
     background-color: $transparent;
     border-radius: $progress-bar-border-radius;
+
+    @include respond-to($medium-breakpoint) {
+        width: 80%;
+    }
 }
 
     .progress-bar__fill {

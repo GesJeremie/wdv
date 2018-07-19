@@ -2,7 +2,15 @@ module ApplicationHelper
   include ActionView::Helpers::NumberHelper
 
   def store_open?
-    true
+    Option.first.open?
+  end
+
+  def store_phone
+    Option.first.phone
+  end
+
+  def store_phone_for_hyperlink
+    store_phone.gsub(' ', '').gsub('-', '')
   end
 
   def humanize_boolean(boolean)

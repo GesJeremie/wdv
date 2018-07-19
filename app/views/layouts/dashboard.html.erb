@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Starter</title>
+    <title>Dashboard</title>
 
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'dashboard', media: 'all' %>
+    <%= render 'application/favicon' %>
   </head>
 
   <body>
@@ -24,16 +25,16 @@
               Store
             </a>
             <div class="dropdown-menu" aria-labelledby="store">
-              <%= link_to 'Open/Close', root_path, class: 'dropdown-item' %>
+              <%= link_to 'Options', edit_dashboard_options_path, class: 'dropdown-item' %>
               <%= link_to 'Products', dashboard_products_path, class: 'dropdown-item' %>
             </div>
           </li>
         </ul>
         <div class="my-2 my-lg-0">
           <% if store_open? %>
-            The shop is currently opened
+            <%= dot_boolean(store_open?).html_safe %> The shop is currently opened
           <% else %>
-            The shop is currently closed
+            <%= dot_boolean(store_open?).html_safe %> The shop is currently closed
           <% end %>
         </div>
       </div>

@@ -1,15 +1,19 @@
+/*------------------------------------*\
+    #WARNING
+\*------------------------------------*/
+
 .warning {
     margin: 0 auto;
     margin-top: $spacing-unit * 5;
+    margin-bottom: $spacing-unit * 15;
     width: 100%;
-    border-radius: 5px;
     line-height: 30px;
     border: 1px solid darken($gray--light, 10%);
-    margin-bottom: $spacing-unit * 15;
+    border-radius: 5px;
 
     @include respond-to('medium') {
-        width: 100%;
         margin-bottom: 0;
+        width: 100%;
         height: 170px;
     }
 
@@ -28,8 +32,8 @@
         }
 
         img {
-            height: 100%;
             width: 100%;
+            height: 100%;
             border-radius: 5px;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
@@ -38,22 +42,22 @@
                 width: auto;
                 max-width: 100%;
                 border-radius: 0;
-                border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
             }
         }
     }
 
     .warning__list {
         display: block;
+        padding: $spacing-unit ($spacing-unit * 4);
         width: 100%;
         list-style: disc;
-        padding: $spacing-unit ($spacing-unit * 4);
 
         @include respond-to('medium') {
             padding: 0;
             padding-top: $spacing-unit * 2.5;
-            padding-left: $spacing-unit * 3;
+            padding-left: $spacing-unit * 4;
             width: 70%;
             float: right;
         }

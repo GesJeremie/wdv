@@ -8,6 +8,7 @@
           <th>Title</th>
           <th>Short Description</th>
           <th>Unit price</th>
+          <th>In stock</th>
           <th>Active</th>
           <th colspan="3"></th>
         </tr>
@@ -19,6 +20,7 @@
             <td><%= product.title %></td>
             <td><%= product.short_description %></td>
             <td><%= product.unit_price %></td>
+            <td><%= dot_boolean(product.in_stock?).html_safe %></td>
             <td><%= dot_boolean(product.active?).html_safe %></td>
             <td><%= link_to 'Show', dashboard_product_path(product) %></td>
             <td><%= link_to 'Edit', edit_dashboard_product_path(product) %></td>

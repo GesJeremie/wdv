@@ -1,58 +1,73 @@
+# Seed Options
+puts 'Seeding App options ...'
+
+if Option.count == 0
+    Option.new(
+        open: false,
+        phone: '+1 647-931-6480',
+        admin_name: 'admin',
+        admin_password: 'admin'
+    ).save
+end
+
 # Seed Products
 puts 'Seeding Products ...'
 
 [
     {
-        title: 'LSD - 1g',
-        short_description: 'Hybrid',
-        description: 'The LSD strain was bred by Barneys Farm, with a lineage from Mazar-I-Sharif and Skunk #1. It is a disease-resistant plant that does well in most growing conditions. The buds form in curved triangles, yielding approximately 600 grams per square meter. Flowering time is approximately 8-9 weeks. This marijuana strain is popular for delivering a vivid and psychedelic experience with a powerful body buzz and cerebral high. The THC content has been measured up to 24% with a CBD of 1.3%.',
-        unit_price: 10,
+        title: 'Purple Kush - 1g',
+        short_description: 'Indica',
+        description: 'Purple Kush is a pure indica strain that emerged from the Oakland area of California as the result of a Hindu Kush and Purple Afghani cross. Its aroma is subtle and earthy with sweet overtones typical of Kush varieties. Blissful, long-lasting euphoria blankets the mind while physical relaxation rids the body of pain, sleeplessness, and stress.',
+        unit_price: 12,
         icon: 'flowers',
         metadata: '{
             "effects": [
                 {"label": "Relaxed", "percentage": 100},
-                {"label": "Uplifted", "percentage": 98},
-                {"label": "Happy", "percentage": 91},
-                {"label": "Euphoric", "percentage": 85},
-                {"label": "Creative", "percentage": 80}
+                {"label": "Happy", "percentage": 73},
+                {"label": "Euphoric", "percentage": 68},
+                {"label": "Sleepy", "percentage": 60},
+                {"label": "Hungry", "percentage": 44}
             ],
             "dosage": "Enough for about 2 joints or 3 – 4 bowls."
         }',
+        in_stock: true,
         active: true
     },
 
     {
-        title: 'Bubba Kush - 1g',
-        short_description: 'Indica',
-        description: 'Bubba Kush is an indica strain that has gained notoriety in the U.S. and beyond for its heavy tranquilizing effects. Sweet hashish flavors with subtle notes of chocolate and coffee come through on the exhale, delighting the palate as powerful relaxation takes over. From head to toe, muscles ease with heaviness as dreamy euphoria blankets the mind, crushing stress while coercing happy moods. Bubba Kush exhibits a distinctive, bulky bud structure with hues that range from forest green to pale purple.',
-        unit_price: 10,
+        title: 'ALF - 1g',
+        short_description: 'Hybrid',
+        description: 'The indica-dominant hybrid Alf was created by crossing Animal Pie (an Animal Cookies and Cherry Pie hybrid) and Black Raven (White Fire Alien OG x ’09 Cookies) from The Captain’s Connection. With dessert-like notes of cookies and sour cherry, Alf’s aroma is as enticing as its purple crystal-coated buds.',
+        unit_price: 12,
         icon: 'flowers',
         metadata: '{
             "effects": [
                 {"label": "Relaxed", "percentage": 100},
-                {"label": "Sleepy", "percentage": 71},
-                {"label": "Happy", "percentage": 66},
-                {"label": "Euphoric", "percentage": 55},
-                {"label": "Hungry", "percentage": 46}
+                {"label": "Creative", "percentage": 50},
+                {"label": "Euphoric", "percentage": 50},
+                {"label": "Giggly", "percentage": 50},
+                {"label": "Happy", "percentage": 50}
             ],
             "dosage": "Enough for about 2 joints or 3 – 4 bowls."
         }',
+        in_stock: false,
         active: true
     },
 
     {
         title: 'Uncle B.O.B - 5g',
         short_description: 'Hybrid',
-        description: 'The famous Uncle B.O.B',
-        unit_price: 25,
+        description: "Want to get high but you're running low on cash? Don't worry we've got you covered, say hello to your new favorite Uncle: B.O.B B.O.B is the acronym for Bottom Of Bag: Long story short, this is a 5grams blend of the little crispy crumbs left at the bottom of our weed bags. This is not your usual shitty shake, it's Uncle B.O.B!",
+        unit_price: 30,
         icon: 'flowers',
         metadata: '{
             "effects": [
                 {"label": "Stoned", "percentage": 100},
-                {"label": "Hit on your wallet", "percentage": 21}
+                {"label": "Hit on your wallet", "percentage": 23}
             ],
             "dosage": "Enough for about 10 joints or 15 – 20 bowls."
         }',
+        in_stock: true,
         active: true
     }
 

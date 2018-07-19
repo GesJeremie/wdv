@@ -1,14 +1,18 @@
+/*------------------------------------*\
+    #CALL-US
+\*------------------------------------*/
+
 .call-us {
     position: fixed;
-    width: 100%;
-    z-index: 3;
     bottom: 0;
-    border-top: 1px solid darken($gray--light, 8%);
+    z-index: 3;
     padding: $spacing-unit * 3;
+    width: 100%;
     letter-spacing: 1px;
     text-align: center;
     background-color: $gray--light;
-    border-bottom: 1px solid darken($gray--light, 5%);
+    border-top: 1px solid darken($gray--light, 8%);
+    border-bottom: 1px solid darken($gray--light, 8%);
 
     @include respond-to('medium') {
         position: relative;

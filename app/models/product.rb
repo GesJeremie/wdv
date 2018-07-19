@@ -8,6 +8,7 @@ class Product < ApplicationRecord
   validates :short_description, presence: true
   validates :unit_price, presence: true
   validates :icon, presence: true
+  validates :in_stock, inclusion: { in: BOOLEANS }
   validates :active, inclusion: { in: BOOLEANS }
 
   validates_with JsonValidator, attributes: [:metadata]

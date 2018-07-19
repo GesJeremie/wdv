@@ -12,12 +12,15 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get '/dashboard', to: redirect('/dashboard/products')
+
   scope format: true, constraints: JsonConstraint.new do
     resources :products, only: [:show]
   end
 
   namespace :dashboard do
     resources :products
+    resource :options, only: [:edit, :update]
   end
 end
 
