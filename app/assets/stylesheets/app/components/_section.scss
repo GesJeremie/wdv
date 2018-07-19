@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #SECTION
+\*------------------------------------*/
+
+.section {
+    margin: 0 auto;
+    width: 97%;
+
+    @include respond-to($medium-breakpoint) {
+        width: 100%;
+    }
+}

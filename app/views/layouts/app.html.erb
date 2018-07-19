@@ -15,6 +15,7 @@
     <meta property="og:image" content="<%= asset_url('home-cover.jpeg') %>" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'app', media: 'all' %>
@@ -46,15 +47,9 @@
         <div class="grid grid--center">
           <div class="grid__cell grid__cell--80">
             <div class="header">
-              <div class="grid grid--center">
-
-                <div class="grid__cell grid__cell--33">
-                  <a href="<%= root_path %>" class="header__logo">
-                    <div class="header__logo-text">WDV</div>
-                  </a>
-                </div>
-
-              </div>
+              <a href="<%= root_path %>" class="header__logo">
+                <div class="header__logo-text">WDV</div>
+              </a>
             </div>
           </div>
         </div>
