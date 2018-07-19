@@ -57,6 +57,7 @@
         @include respond-to('medium') {
             padding: 0;
             padding-top: $spacing-unit * 2.5;
+            padding-right: $spacing-unit;
             padding-left: $spacing-unit * 4;
             width: 70%;
             float: right;
