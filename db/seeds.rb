@@ -19,7 +19,7 @@ puts 'Seeding Products ...'
         short_description: 'Indica',
         description: 'Purple Kush is a pure indica strain that emerged from the Oakland area of California as the result of a Hindu Kush and Purple Afghani cross. Its aroma is subtle and earthy with sweet overtones typical of Kush varieties. Blissful, long-lasting euphoria blankets the mind while physical relaxation rids the body of pain, sleeplessness, and stress.',
         unit_price: 12,
-        icon: 'flowers',
+        icon: 'flowers.svg',
         metadata: '{
             "effects": [
                 {"label": "Relaxed", "percentage": 100},
@@ -39,7 +39,7 @@ puts 'Seeding Products ...'
         short_description: 'Hybrid',
         description: 'The indica-dominant hybrid Alf was created by crossing Animal Pie (an Animal Cookies and Cherry Pie hybrid) and Black Raven (White Fire Alien OG x ’09 Cookies) from The Captain’s Connection. With dessert-like notes of cookies and sour cherry, Alf’s aroma is as enticing as its purple crystal-coated buds.',
         unit_price: 12,
-        icon: 'flowers',
+        icon: 'flowers.svg',
         metadata: '{
             "effects": [
                 {"label": "Relaxed", "percentage": 100},
@@ -59,7 +59,7 @@ puts 'Seeding Products ...'
         short_description: 'Hybrid',
         description: "Want to get high but you're running low on cash? Don't worry we've got you covered, say hello to your new favorite Uncle: B.O.B B.O.B is the acronym for Bottom Of Bag: Long story short, this is a 5grams blend of the little crispy crumbs left at the bottom of our weed bags. This is not your usual shitty shake, it's Uncle B.O.B!",
         unit_price: 30,
-        icon: 'flowers',
+        icon: 'flowers.svg',
         metadata: '{
             "effects": [
                 {"label": "Stoned", "percentage": 100},
