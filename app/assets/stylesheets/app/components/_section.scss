@@ -6,7 +6,7 @@
     margin: 0 auto;
     width: 97%;
 
-    @include respond-to($medium-breakpoint) {
+    @include respond-to('medium') {
         width: 100%;
     }
 }

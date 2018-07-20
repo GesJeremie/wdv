@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "icons";
-  src: url("icons.eot");
-  src: url("icons.eot?#iefix") format("embedded-opentype"),
-       url("icons.woff2") format("woff2"),
-       url("icons.woff") format("woff"),
-       url("icons.ttf") format("truetype"),
-       url("icons.svg#icons") format("svg");
+  src: url(asset-path("icons.eot"));
+  src: url(asset-path("icons.eot?#iefix")) format("embedded-opentype"),
+       url(asset-path("icons.woff2")) format("woff2"),
+       url(asset-path("icons.woff")) format("woff"),
+       url(asset-path("icons.ttf")) format("truetype"),
+       url(asset-path("icons.svg#icons")) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "icons";
-    src: url("icons.svg#icons") format("svg");
+    src: url(asset-path("icons.svg#icons")) format("svg");
   }
 }
 

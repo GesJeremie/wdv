@@ -12,7 +12,7 @@ $progress-bar-border-radius: 20px !default;
     background-color: $transparent;
     border-radius: $progress-bar-border-radius;
 
-    @include respond-to($medium-breakpoint) {
+    @include respond-to('medium') {
         width: 80%;
     }
 }
