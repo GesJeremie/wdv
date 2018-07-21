@@ -54,6 +54,9 @@
       <div class="product-grid">
 
         <% @products.each do |product| %>
+
+          <%= render 'jsonld/product', product: product %>
+
           <div class="product-grid__cell" data-controller="productItem" data-productItem-product-id="<%= product.id %>">
             <div class="product" data-action="click->productItem#onClickProduct">
               <div class="product__icon">
