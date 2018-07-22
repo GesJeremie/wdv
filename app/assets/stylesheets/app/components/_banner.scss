@@ -95,3 +95,11 @@ $banner-container-text-bg-color:        $gray !default;
             .banner__action {
                 margin-top: $spacing-unit * 3;
             }
+
+            .banner__facebook {
+                margin-top: $spacing-unit * 2;
+
+                iframe {
+                    text-align: center;
+                }
+            }

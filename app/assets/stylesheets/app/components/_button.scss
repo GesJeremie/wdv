@@ -38,6 +38,11 @@ $button-border-radius:      4px !default;
         color: $white;
         background-color: $green;
     }
+
+    .banner__facebook & {
+        color: $white;
+        background: #3b5998;
+    }
 }
 
 .button + .button {
